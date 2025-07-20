@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 5% 0 0 30%;
+}
+
+.container {
+  width: 600px;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.sawirka1 {
+  width: 300px;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.product-details {
+  padding: 25px;
+}
+
+h3 {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3.5px;
+  /* font-family: "Fraunces", serif; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  /* font-family: "Montserrat", sans-serif; */
+  padding-bottom: 15px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 15px;
+}
+
+.price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.underline-price {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0 35px 25px;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-align: center;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  width: 230px;
+  padding: 11px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .sawirka1 {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+}
